@@ -9,9 +9,6 @@ function updateImage(){
   .then(response => response.json())
   .then(data => {
     // Update the src attribute with the received data
-    console.log(data);
-    console.log(data.items[0].statistics.viewCount
-      );
     imageElement.src = data.items[0].snippet.thumbnails.medium.url;
     newestHeader.innerHTML = data.items[0].snippet.title;
     newestCounter.innerHTML = data.items[0].statistics.viewCount;
@@ -24,5 +21,7 @@ function updateImage(){
 updateImage()
 
 setInterval(updateImage, 60000);
+
+
 
 
