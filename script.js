@@ -1,4 +1,4 @@
-const apiUrl = 'https://youtube.googleapis.com/youtube/v3/videos?part=statistics%2Csnippet&id=RmTq3cJqyCo%2CfE2h3lGlOsk%2CpNfTK39k55U%2CzndvqTc4P9I%2C_ysomCGaZLw%2CMjCZfZfucEc%2CwTowEKjDGkU&key=AIzaSyCSxEEH9DjflJ1Czxk_wH6_zQWRlbtmT4E';
+const apiUrl = 'https://youtube.googleapis.com/youtube/v3/videos?part=statistics%2Csnippet&id=RmTq3cJqyCo%2CfE2h3lGlOsk%2CpNfTK39k55U%2CzndvqTc4P9I%2C_ysomCGaZLw%2CMjCZfZfucEc%2CwTowEKjDGkU%2CHbb5GPxXF1w%2CzugAhfd2r0g&key=AIzaSyCSxEEH9DjflJ1Czxk_wH6_zQWRlbtmT4E';
 const imageElement = document.getElementById("myImage");
 const newestHeader = document.getElementById("newestHeader");
 const newestCounter = document.getElementById("viewersCount2");
@@ -16,6 +16,7 @@ async function getData(){
             imageElement2.src = data.items[1].snippet.thumbnails.medium.url;
             popularHeader.innerHTML = data.items[1].snippet.title;
             
+
        }catch (error){
         console.log('Error', error);
        }
@@ -53,11 +54,6 @@ async function updateData(){
 
 updateData();
 setInterval(updateData, 60000);
-
-
-
-
-
 
 
 
