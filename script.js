@@ -57,38 +57,42 @@ async function updateData(){
 updateData();
 setInterval(updateData, 60000);
 
-
 // Example JavaScript code
+let currentCount = 0; // Store the current count globally
+
 function animateViewsCount(targetCount) {
   const viewsCountElement = document.getElementById('viewsCount');
-  const currentCount = parseInt(viewsCountElement.textContent);
   const increment = Math.ceil((targetCount - currentCount) / 60); // Increment value for each animation frame
 
   if (currentCount < targetCount) {
     const animation = setInterval(() => {
-      const updatedCount = parseInt(viewsCountElement.textContent) + increment;
+      const updatedCount = currentCount + increment;
       if (updatedCount >= targetCount) {
         clearInterval(animation);
+        currentCount = targetCount; // Update the current count
         viewsCountElement.textContent = targetCount;
       } else {
+        currentCount = updatedCount; // Update the current count
         viewsCountElement.textContent = updatedCount;
       }
-    }, 100); // Change timing here if needed
+    }, 10); // Change timing here if needed
   } else {
+    currentCount = targetCount; // Update the current count
     viewsCountElement.textContent = targetCount;
   }
 }
 
 // Example implementation of fetchViewsCount()
 async function fetchViewsCount() {
+  
 
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
     if (response.ok) {
-      const viewsCount = data.items[0].statistics.viewCount;
-      return parseInt(viewsCount);
+      const viewsCount = parseInt(data.items[0].statistics.viewCount);
+      return viewsCount;
     } else {
       console.error('Failed to fetch views count:', data.error.message);
     }
@@ -96,7 +100,7 @@ async function fetchViewsCount() {
     console.error('Error occurred while fetching views count:', error);
   }
 
-  return 0; // Return a default value in case of an error
+  return currentCount; // Return the current count in case of an error
 }
 
 // Updated fetchDataAndUpdateViewsCount function
@@ -117,8 +121,4 @@ fetchDataAndUpdateViewsCount();
 
 // Fetch and update every 60 seconds
 setInterval(fetchDataAndUpdateViewsCount, 60000);
-
-
-
-
 
