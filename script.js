@@ -62,7 +62,7 @@ setInterval(updateData, 60000);
 function animateViewsCount(targetCount) {
   const viewsCountElement = document.getElementById('viewsCount');
   const currentCount = parseInt(viewsCountElement.textContent);
-  const increment = Math.ceil((targetCount - currentCount) / 60); // Increment value for each animation frame
+  const increment = Math.ceil((targetCount - currentCount) / 1000); // Increment value for each animation frame
 
   if (currentCount < targetCount) {
     const animation = setInterval(() => {
@@ -73,7 +73,7 @@ function animateViewsCount(targetCount) {
       } else {
         viewsCountElement.textContent = updatedCount;
       }
-    }, 10); // Change timing here if needed
+    }, 6000); // Change timing here if needed
   } else {
     viewsCountElement.textContent = targetCount;
   }
@@ -117,3 +117,8 @@ fetchDataAndUpdateViewsCount();
 
 // Fetch and update every 60 seconds
 setInterval(fetchDataAndUpdateViewsCount, 60000);
+
+
+
+
+
