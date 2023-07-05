@@ -25,7 +25,6 @@ body{
 #main-wrap-container{
   display: flex;
   flex-wrap: nowrap;
-  background-color: #21242b;
 }
 
 #main-wrap-container>div{
@@ -130,7 +129,7 @@ body{
   margin: 0;
   padding: 0 10px 0 10px;
   height: 90px;
-  background-color: #3b3c44; 
+  background-color: #21242b; 
 }
 
 #data-table tr{
@@ -143,6 +142,11 @@ body{
   max-width: 100px;
   max-height: 100px;
   border-radius: 5px;
+}
+
+#viewsCount {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 
