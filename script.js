@@ -73,7 +73,7 @@ function animateViewsCount(targetCount) {
       } else {
         viewsCountElement.textContent = updatedCount;
       }
-    }, 1000); // Change timing here if needed
+    }, 500); // Change timing here if needed
   } else {
     viewsCountElement.textContent = targetCount;
   }
