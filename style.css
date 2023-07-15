@@ -93,24 +93,26 @@ body{
         padding: 5px;
         flex-direction: column;
     }
-    .item{
+     .item{
         width: 100%;
         height: auto;
         background-color: #21242b;
-        border: 2px solid orange;
         border-radius: 0px;
     }
    #header{
     width: 100%;
     height: 60px;
     display: flex;
-    font-size: 10px;
+    flex-direction:column;
+    font-size: 11px;
     top: 0;
-    margin: 0 auto 15px auto;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto 0px auto;
+       padding:5px;
+    justify-content: start;
+    align-items: start;
 
 }
+
 
     
 }
