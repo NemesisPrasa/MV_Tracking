@@ -101,15 +101,13 @@ body{
         border-radius: 0px;
     }
    #header{
-    width: 90%;
-    height: 40px;
-    background-color: #21242b;
-    color: white;
+    width: 100%;
+    height: 60px;
     display: flex;
-    font-size: 15px;
+    font-size: 10px;
     top: 0;
     margin: 0 auto 15px auto;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
 }
