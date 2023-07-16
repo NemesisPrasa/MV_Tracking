@@ -54,7 +54,7 @@ function showCurrentPage() {
 showCurrentPage();
 
 // Show a new page every 3 minutes
-setInterval(showCurrentPage, 60000); // 180000 milliseconds = 3 minutes
+setInterval(showCurrentPage, 120000); // 180000 milliseconds = 3 minutes
 
 
 var heads = document.getElementsByClassName('hed');
@@ -77,7 +77,7 @@ function showCurrentHed() {
 showCurrentHed();
 
 // Show a new page every 3 minutes
-setInterval(showCurrentHed, 60000); // 180000 milliseconds = 3 minutes
+setInterval(showCurrentHed, 120000); // 180000 milliseconds = 3 minutes
 
 
 
