@@ -6,7 +6,7 @@ function formatDateTime(date) {
       hour: '2-digit',
       minute: '2-digit',
       second: '2-digit',
-      timeZone: 'Asia/Colombo'
+      timeZone: 'Asia/Seoul'
     };
 
     return date.toLocaleString('en-US', options);
