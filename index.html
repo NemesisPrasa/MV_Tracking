@@ -1,590 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="script.js"></script>
-    <title>Document</title>
+  <title>MV TRACKING</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/themes/odometer-theme-default.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="timeAdjust.js"></script>
+  
 </head>
 <body>
-    <div id="header">
-        
-        <div id="hed1" class="hed">
-            <div class="group-name">
-                <p>JYPE: <span id="group-name"></span>Newly Released MV</p>
-            </div>
-            <div class="group-news">
-                <p>News: <span id="group-name"> Itzy CB on July 31 </span></p>
-            </div>
-           
-        </div>
-      
-
-        <div id="hed2" class="hed">
-            <div class="group-name">
-                <p>GROUP: <span id="group-name"></span>ITZY</p>
-            </div>
-            <div class="group-news">
-                <p>News: <span id="group-name"> Itzy CB on July 31 </span></p>
-            </div>
-            
-        </div>
-
-        <div id="hed3" class="hed">
-            <div class="group-name">
-                <p>GROUP: <span id="group-name"></span>TWICE</p>
-            </div>
-            <div class="group-news">
-                <p>News: <span id="group-name"> Itzy CB on July 31 </span></p>
-            </div>
-            
-        </div>
-        <div id="current-time"></div>
-        
-
+  <div id="header">
+    <div id="hed2" class="hed">
+      <div class="group-name">
+          <p>GROUP: <span id="group-name"></span>ITZY</p>
+      </div>
+      <div class="group-news">
+          <p>News: <span id="group-name"> "CAKE" MV | #45 global top music video </span></p>
+      </div>
     </div>
-    <div id="container">
-        <div id="page1" class="page">
+    <div id="current-time"></div>
+  </div>
 
-        
-            <div class="item item1">
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> ITZY</p>
-                        <p><span>Released:</span> Jul 23, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/FcQ6oB1JPiA ">
-                    </iframe>
-                </div>
-            
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> MISAMO</p>
-                        <p><span>Released:</span> Jul 13, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/woKq2sD8xho ">
-                    </iframe>
-                </div>
+  <div id="container">
+  <div id="page2" class="page">
+    <div class="item item1">
     
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> NMIXX</p>
-                        <p><span>Released:</span> Jul 11, 2023 </p>
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/Rd2wppggYxo ">
-                    </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> NMIXX</p>
-                        <p><span>Released:</span> Jul 3, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/fqBAzCH4-9g ">
-                    </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> ITZY</p>
-                        <p><span>Released:</span> Jul 2, 2023 </p>
-                    </div>
-                        <iframe class="mv_itzy"
-                            src=https://livecounts.io/embed/youtube-live-view-counter/RmTq3cJqyCo ">
-                        </iframe>
-                </div>
-    
-                
-    
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>"CAKE" mv</span></p>
+                <p id="countdown"></p>
             </div>
-    
-            <div class="item item2">
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> NiziU</p>
-                        <p><span>Released:</span>  Jun 28, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/RRUa9HqURPs ">
-                    </iframe>
-                </div>
+            <div class="photo-container">
                 
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> Stray Kids</p>
-                        <p><span>Released:</span> Jun 2, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/JsOOis4bBFg ">
-                    </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> YAOCHEN</p>
-                        <p><span>Released:</span>  May 23, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/0TF850hLwXs ">
-                    </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> Xdinary Heroes</p>
-                        <p><span>Released:</span>  May 15, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/z6veDdj2gV0 ">
-                    </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> Xdinary Heroes</p>
-                        <p><span>Released:</span> May 8, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/TFZszieg4J0 ">
-                    </iframe>
-                </div>
-    
-    
-            </div>
-    
-            <div class="item item3">
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> BOY STORY</p>
-                        <p><span>Released:</span>  Apr 28, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/SbSSWKa1u9w ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> YAOCHEN</p>
-                        <p><span>Released:</span>  Apr 27, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/hf3_mQxSrUI ">
-                    </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> Xdinary Heroes</p>
-                        <p><span>Released:</span> Apr 26, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/YSZSCQkUnx4 ">
-                    </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> NMIXX</p>
-                        <p><span>Released:</span> Mar 20, 2023</p>
-                    </div>
-                        <iframe class="mv_itzy"
-                            src=https://livecounts.io/embed/youtube-live-view-counter/EDnwWcFpObo ">
-                        </iframe>
-                </div>
-    
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Group Name:</span> NMIXX</p>
-                        <p><span>Released:</span> Mar 12, 2023</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/5eh6Vj_vVg4 ">
-                    </iframe>
-                </div>
-    
-                
-    
-            </div>
-        </div> 
+                <img id="myImage" src="" alt="Image">
+                <div class="gradient-overlay"></div>
+                <div class="black-overflow">
 
-        <div id="page2" class="page">
-            <div class="item item1">
+                    <div class="remaining">
+                        <div><span>20M</span></div>
+                        <div> <div class="odometer" id="myOdometer2"></div></div>
+                        <div><span>Today</span></div>
+                        <div> <div class="odometer" id="myOdometer3"></div></div>
+                       
+                        
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            <div class="main-counter">
+                <div class="odometer" id="myOdometer1"></div>
+                
+
+            </div>
             
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 01</p>
-                        <p><span>Released:</span> Mar 9, 2020</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/fE2h3lGlOsk ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 02</p>
-                        <p><span>Released:</span>  Feb 10, 2019</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/pNfTK39k55U ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 03</p>
-                        <p><span>Released:</span> Jul 28, 2019</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/zndvqTc4P9I ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                            <p><span>Ranking:</span> 04</p>
-                            <p><span>Released:</span> Apr 30, 2021 </p>
-                            
-                
-                        </div>
-                        <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/_ysomCGaZLw ">
-                        </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                        <div class="mv-title">
-                            <p><span>Ranking:</span> 05</p>
-                            <p><span>Released:</span>  Sep 24, 2021</p>
-                            
-                
-                        </div>
-                        <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/MjCZfZfucEc ">
-                        </iframe>
-                </div>
-                
-            </div>
-                
-            <div class="item item2">
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 06</p>
-                        <p><span>Released:</span> Aug 17, 2020</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/wTowEKjDGkU ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 07</p>
-                        <p><span>Released:</span>  Jul 15, 2022 </p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/Hbb5GPxXF1w ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 08</p>
-                        <p><span>Released:</span>  Nov 30, 2022</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/zugAhfd2r0g ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                            <p><span>Ranking:</span> 09</p>
-                            <p><span>Released:</span> Sep 26, 2021 </p>
-                            
-                
-                    </div>
-                        <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/9oyodEkzn94 ">
-                        </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                        <div class="mv-title">
-                            <p><span>Ranking:</span> 10</p>
-                            <p><span>Released:</span>  Oct 21, 2022</p>
-                            
-                
-                        </div>
-                        <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/6uZy86ePgO0 ">
-                        </iframe>
-                </div>
-                
-            </div>
-                
-            <div class="item item3">
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 11</p>
-                        <p><span>Released:</span>  Mar 22, 2022</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/krzf1hkFAZA ">
-                    </iframe>
-                </div>
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 12</p>
-                        <p><span>Released:</span> Oct 31, 2021</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/yeHZNPplmm4 ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                            <p><span>Ranking:</span> 13</p>
-                            <p><span>Released:</span>  Sep 20, 2022 </p>
-                            
-                
-                        </div>
-                        <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/F-QTb-0wRGk ">
-                        </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 14</p>
-                        <p><span>Released:</span>  Jul 2, 2023</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/RmTq3cJqyCo ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                        <div class="mv-title">
-                            <p><span>Ranking:</span> 15</p>
-                            <p><span>Released:</span>  23 Jul 2023</p>
-                            
-                
-                        </div>
-                        <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/FcQ6oB1JPiA ">
-                        </iframe>
-                </div>
-                
-            </div>
-        
+            
         </div>
 
-        <div id="page3" class="page">
-            <div class="item item1">
-            
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 01</p>
-                        <p><span>Released:</span> Apr 9, 2018</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/i0p1bmr0EmE ">
-                    </iframe>
-                </div>
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 01</p>
+                <p><span>Released:</span>  Mar 9, 2020</p>
                 
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 02</p>
-                        <p><span>Released:</span> Oct 23, 2016</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/ePpPVE-GGJw ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 03</p>
-                        <p><span>Released:</span> Oct 30, 2017</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/V2hlQkVJZhE ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 04</p>
-                        <p><span>Released:</span> Apr 22, 2019</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/kOHB85vDuow ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                        <div class="mv-title">
-                            <p><span>Ranking:</span> 05</p>
-                            <p><span>Released:</span> Apr 24, 2016</p>
-                        </div>
-                        <iframe class="mv_itzy"
-                            src=https://livecounts.io/embed/youtube-live-view-counter/c7rCyll5AeY ">
-                        </iframe>
-                </div>
-                
-            </div>
-                
-            <div class="item item2">
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 06</p>
-                        <p><span>Released:</span> Oct 26, 2020</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/CM4CkVFmTds ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 07</p>
-                        <p><span>Released:</span> Oct 19, 2015</p>
-                        
-                
-                    </div>
-                    <iframe class="mv_itzy"
-                    src=https://livecounts.io/embed/youtube-live-view-counter/0rtV5esQT6I ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 08</p>
-                        <p><span>Released:</span> Sep 23, 2019</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/3ymwOvzhwHs ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                            <p><span>Ranking:</span> 09</p>
-                            <p><span>Released:</span> Dec 11, 2017</p>
-                        </div>
-                        <iframe class="mv_itzy"
-                            src=https://livecounts.io/embed/youtube-live-view-counter/rRzxEiBLQCA ">
-                        </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                        <div class="mv-title">
-                            <p><span>Ranking:</span> 10</p>
-                            <p><span>Released:</span> Nov 5, 2018</p>
-                        </div>
-                        <iframe class="mv_itzy"
-                            src=https://livecounts.io/embed/youtube-live-view-counter/mAKsZ26SabQ ">
-                        </iframe>
-                </div>
-                
-            </div>
-                
-            <div class="item item3">
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 11</p>
-                        <p><span>Released:</span> Oct 1, 2021</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/f5_wn8mexmM ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 12</p>
-                        <p><span>Released:</span> Jul 9, 2018</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/Fm5iP0S1z9w ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 13</p>
-                        <p><span>Released:</span> Jun 1, 2020</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/mH0_XpSHkZo ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                    <div class="mv-title">
-                        <p><span>Ranking:</span> 14</p>
-                        <p><span>Released:</span> Feb 19, 2017</p>
-                    </div>
-                    <iframe class="mv_itzy"
-                        src=https://livecounts.io/embed/youtube-live-view-counter/8A2t_tAjMz8 ">
-                    </iframe>
-                </div>
-                
-                <div class="video-itzy">
-                        <div class="mv-title">
-                            <p><span>Ranking:</span> 15</p>
-                            <p><span>Released:</span> May 15, 2017</p>
-                        </div>
-                        <iframe class="mv_itzy"
-                            src=https://livecounts.io/embed/youtube-live-view-counter/VQtonf1fv_s ">
-                        </iframe>
-                </div>
-                
-            </div>
         
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/fE2h3lGlOsk ">
+            </iframe>
         </div>
-
+        
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 02</p>
+                <p><span>Released:</span>  Feb 10, 2019</p>
+                
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/pNfTK39k55U ">
+            </iframe>
+        </div>
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 03</p>
+                <p><span>Released:</span> Jul 28, 2019</p>
+                
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/zndvqTc4P9I ">
+            </iframe>
+        </div>
+        
+        
+    </div>
+        
+    <div class="item item2">
         
        
+        
+        <div class="video-itzy">
+            <div class="mv-title">
+                    <p><span>Ranking:</span> 04</p>
+                    <p><span>Released:</span> Apr 30, 2021 </p>
+                    
+        
+                </div>
+                <iframe class="mv_itzy"
+                src=https://livecounts.io/embed/youtube-live-view-counter/_ysomCGaZLw ">
+                </iframe>
+        </div>
+        
+        <div class="video-itzy">
+                <div class="mv-title">
+                    <p><span>Ranking:</span> 05</p>
+                    <p><span>Released:</span>  Sep 24, 2021</p>
+                    
+        
+                </div>
+                <iframe class="mv_itzy"
+                src=https://livecounts.io/embed/youtube-live-view-counter/MjCZfZfucEc ">
+                </iframe>
+        </div>
+        
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 06</p>
+                <p><span>Released:</span> Aug 17, 2020</p>
+                
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/wTowEKjDGkU ">
+            </iframe>
+        </div>
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 07</p>
+                <p><span>Released:</span>  Jul 15, 2022 </p>
+                
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/Hbb5GPxXF1w ">
+            </iframe>
+        </div>
+        
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 08</p>
+                <p><span>Released:</span>  Nov 30, 2022</p>
+                
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/zugAhfd2r0g ">
+            </iframe>
+        </div>
+        
+        
+    </div>
+        
+    <div class="item item3">
+        
+        
+        <div class="video-itzy">
+            <div class="mv-title">
+                    <p><span>Ranking:</span> 09</p>
+                    <p><span>Released:</span> Sep 26, 2021 </p>
+                    
+        
+            </div>
+                <iframe class="mv_itzy"
+                src=https://livecounts.io/embed/youtube-live-view-counter/9oyodEkzn94 ">
+                </iframe>
+        </div>
+        
+        <div class="video-itzy">
+                <div class="mv-title">
+                    <p><span>Ranking:</span> 10</p>
+                    <p><span>Released:</span>  Oct 21, 2022</p>
+                    
+        
+                </div>
+                <iframe class="mv_itzy"
+                src=https://livecounts.io/embed/youtube-live-view-counter/6uZy86ePgO0 ">
+                </iframe>
+        </div>
+        
+        
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 11</p>
+                <p><span>Released:</span>  Mar 22, 2022</p>
+                
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/krzf1hkFAZA ">
+            </iframe>
+        </div>
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 12</p>
+                <p><span>Released:</span> Oct 31, 2021</p>
+                Jul 2, 2023
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/RmTq3cJqyCo ">
+            </iframe>
+        </div>
+        <div class="video-itzy">
+            <div class="mv-title">
+                <p><span>Ranking:</span> 13</p>
+                <p><span>Released:</span> Oct 31, 2021Jul 23, 2023</p>
+                
+        
+            </div>
+            <iframe class="mv_itzy"
+            src=https://livecounts.io/embed/youtube-live-view-counter/FcQ6oB1JPiA ">
+            </iframe>
+        </div>
+        
+      
+        
+      
+        
     </div>
 
-        
-    
+  </div>
+  </div>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+  <script  src="script.js"></script> 
+ <!-- External JavaScript file for API and updating -->
 </body>
 </html>
+
