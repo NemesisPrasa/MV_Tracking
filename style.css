@@ -1,117 +1,272 @@
 *, *::before, *::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #121317;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #121317;
+  justify-content: center;
+  height: 1080px;
+  width: 1920px;
+  border: #fff solid 2px;
+  align-items: center;
+  overflow: hidden;
 }
 
 #header{
-    width: 90%;
-    height: 40px;
-    background-color: #21242b;
-    color: white;
-    display: flex;
-    font-size: 15px;
-    top: 0;
-    margin: 0 auto 15px auto;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 98%;
+  height: 50px;
+  background-color: #21242b;
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  top: 0;
+  margin: 0 auto 15px auto;
+  justify-content: space-evenly;
+  align-items: center;
 
 }
-
 #container{
-    width: 90%;
-    height: auto;
-    margin:  auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.item{
-    width: 31%;
-    height: auto;
-    background-color: #21242b;
-    border: #32343b solid 1px;
-    border-radius: 0px;
-    display: flex;
-    flex-direction: row;
-}
-
-.item1{
-    display: flex;
-    flex-direction: column;
-}
-.item2{
-    display: flex;
-    flex-direction: column;
-}
-.item3{
-    display: flex;
-    flex-direction: column;
-}
-
-.video-itzy{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #070606;
-}
-
-.mv-title{
-    color: white;
-    display: flex;
-    font-size: 13px;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: #21242b;
-    
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.mv_itzy{
-    width: 100%;
-    height: 90px;
-    border: none;
-}
-
-.page {
-  display: none;
-  overflow: hidden;
-  width: 100%;
+  width: 98%;
+  height: auto;
+  margin:  auto;
+  display: flex;
   justify-content: space-between;
 }
 
 .hed{
-    width: 40%;
-    justify-content: space-between;
-    display: none;
+  width: 41%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.item{
+  width: 32%;
+  height: auto;
+  background-color: #121317;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.item1{
+  display: flex;
+  flex-direction: column;
+}
+.item2{
+  display: flex;
+  flex-direction: column;
+}
+.item3{
+  display: flex;
+  flex-direction: column;
+}
+
+.video-itzy{
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #121215;
+}
+
+.mv-title{
+  color: white;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #21242b;
+  
 }
 
 
-@media only screen and (max-width: 600px) {
-    #container{
-        width: 100%; 
-        padding: 5px;
-        flex-direction: column;
-    }
-    .item{
-        width: 100%;
-        height: auto;
-        background-color: #21242b;
-        border: 2px solid orange;
-        border-radius: 0px;
-    }
+.container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.mv_itzy{
+  width: 100%;
+  height: 140px;
+  border: none;
+  padding-bottom: 5px;
+}
+
+.page {
+display: flex;
+overflow: hidden;
+width: 100%;
+justify-content: space-between;
+}
+
+.main-counter{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-items: baseline;
+  padding: 5px;
+  height: 65px;
+  background-color: #31333a;
+}
+
+.odometer {
+  transition: transform 0.5s ease;
+  display: inline-block;
+}
+
+
+
+.odometer span {
+  display: inline-block;
+}
+
+/* Optional: Add a "popping" animation to make the digits stand out */
+
+.odometer span {
+  animation: popIn 0.2s ease forwards;
+}
+
+
+.photo-container img {
+  height: 280px;
+  width:100%;
+  display: block;
+}
+
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.black-overflow{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+
+}
+
+.remaining span{
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+}
+.likenComment span{
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.remaining{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100%;
+  padding: 5px;
+
+}
+
+
+#myOdometer2{
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right:280px;
+
+}
+#myOdometer3{
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  padding-left: 10px;
+
+}
+
+#myOdometer1{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#myOdometer4{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+#myOdometer5{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  padding-left: 10px;
+
+}
+.video-details{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+}
+
+.video-thumb{
+  width:60%;
+  height:150px;
+  
+}
+
+.video-thumb img{
+  width:80%;
+}
+
+
+.video-count-details{
+  display:inline-block;
+  position:relative;
+  padding-left:20px;
+}
+
+.video-count-details-today{
+  display:inline-block;
+  font-weight:500;
+  font-size:1.3rem;
+  color:#fff;
+  padding-top:15px;
+  justify-items:baseline;
+
+}
+
+.odo-1{
+  font-size:2.3rem;
+  display:inline-block;
+  top:20px;
+  color:#fff;
+  
 }
