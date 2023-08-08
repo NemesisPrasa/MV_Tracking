@@ -1,4 +1,3 @@
-
 const apiKey = 'AIzaSyCSxEEH9DjflJ1Czxk_wH6_zQWRlbtmT4E';
 const videoId = '0bIRwBpBcZQ%2CRmTq3cJqyCo%2CFcQ6oB1JPiA%2CfE2h3lGlOsk%2CpNfTK39k55U%2CzndvqTc4P9I%2C_ysomCGaZLw%2CMjCZfZfucEc%2CwTowEKjDGkU%2CHbb5GPxXF1w%2CzugAhfd2r0g%2C6uZy86ePgO0%2Ckrzf1hkFAZA%2CF-QTb-0wRGk';
 
@@ -288,8 +287,8 @@ function fetchViewCount3() {
     .then((data) => {
     const viewCount = parseInt(data.items[3].statistics.viewCount);
     let start = viewCount;
-    const max = viewCount + 70;
-    const increment = 2;
+    const max = viewCount + 230;
+    const increment = 4;
 
      setInterval(() => {
         if (start <= max) {
@@ -297,7 +296,7 @@ function fetchViewCount3() {
           odometer82.update(start - 512742145)
           start += increment;
         }
-      }, 10000)
+      }, 3000)
       
     })
 
