@@ -9,7 +9,8 @@ body{
   padding: 0;
   background-color: #121317;
   justify-content: center;
-  height: 100vh;
+  height: 1080px;
+  width: 1920px
   align-items: center;
 }
 
