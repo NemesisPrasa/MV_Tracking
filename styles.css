@@ -29,7 +29,7 @@ body{
 }
 #container{
   width: 90%;
-  height: auto;
+  height: 100vh;
   margin:  auto;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ body{
 
 .item{
   width: 31%;
-  height: auto;
+  height: 100vh;
   background-color: #21242b;
   border-radius: 0px;
   display: flex;
@@ -65,6 +65,7 @@ body{
 
 .video-itzy{
   display: flex;
+  height:auto;
   padding-bottom: 5px;
   justify-content: center;
   flex-direction: column;
@@ -90,7 +91,7 @@ body{
 
 .mv_itzy{
   width: 100%;
-  height: 90px;
+  height: 110px;
   border: none;
 }
 
@@ -128,7 +129,7 @@ justify-content: space-between;
 
 .photo-container img {
   width: 100%;
-  height: 165px;
+  height: auto;
   display: block;
 }
 
@@ -148,10 +149,11 @@ justify-content: space-between;
 
 .black-overflow{
   position: absolute;
+  padding:5px;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 40px;
+  height: 50px;
   background-color: rgba(0, 0, 0, 0.8);
   display: inline-block;
 
@@ -179,7 +181,7 @@ justify-content: space-between;
   font-size: 18px;
   display: inline-block;
   padding-left: 10px;
-  padding-right:40px;
+  padding-right:200px;
 
 }
 #myOdometer3{
@@ -196,5 +198,5 @@ justify-content: space-between;
   font-weight: 600;
   display: inline-block;
   padding: 10px;
-  padding-left: 110px;
+  padding-left: 170px;
 }
