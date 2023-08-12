@@ -245,7 +245,7 @@ function fetchViewCount() {
      setInterval(() => {
         if (start <= max) {
           odometer61.update(start);
-          odometer62.update(start - 12784093)
+          odometer62.update(start - 12823229)
           start += increment;
         }
       }, 5000)
@@ -269,7 +269,7 @@ function fetchViewCount2() {
      setInterval(() => {
         if (start <= max) {
           odometer71.update(start);
-          odometer72.update(start - 6180143)
+          odometer72.update(start - 6240205)
           start += increment;
         }
       }, 4000)
@@ -293,7 +293,7 @@ function fetchViewCount3() {
      setInterval(() => {
         if (start <= max) {
           odometer81.update(start);
-          odometer82.update(start - 513066148)
+          odometer82.update(start - 513179931)
           start += increment;
         }
       }, 3000)
@@ -317,7 +317,7 @@ function fetchViewCount4() {
      setInterval(() => {
         if (start <= max) {
           odometer91.update(start);
-          odometer92.update(start - 318482541)
+          odometer92.update(start - 318507773)
           start += increment;
         }
       }, 10000)
@@ -341,7 +341,7 @@ function fetchViewCount5() {
      setInterval(() => {
         if (start <= max) {
           odometer101.update(start);
-          odometer102.update(start - 261739398)
+          odometer102.update(start - 261754267)
           start += increment;
         }
       }, 10000)
@@ -365,7 +365,7 @@ function fetchViewCount6() {
      setInterval(() => {
         if (start <= max) {
           odometer111.update(start);
-          odometer112.update(start - 245124582)
+          odometer112.update(start - 245150829)
           start += increment;
         }
       }, 10000)
@@ -389,7 +389,7 @@ function fetchViewCount7() {
      setInterval(() => {
         if (start <= max) {
           odometer121.update(start);
-          odometer122.update(start - 236413481)
+          odometer122.update(start - 236476057)
           start += increment;
         }
       }, 10000)
@@ -413,7 +413,7 @@ function fetchViewCount8() {
      setInterval(() => {
         if (start <= max) {
           odometer131.update(start);
-          odometer132.update(start - 204357641)
+          odometer132.update(start - 204372056)
           start += increment;
         }
       }, 10000)
@@ -437,7 +437,7 @@ function fetchViewCount9() {
      setInterval(() => {
         if (start <= max) {
           odometer141.update(start);
-          odometer142.update(start - 137965491)
+          odometer142.update(start - 138012922)
           start += increment;
         }
       }, 10000)
@@ -461,7 +461,7 @@ function fetchViewCount10() {
      setInterval(() => {
         if (start <= max) {
           odometer151.update(start);
-          odometer152.update(start - 136411375)
+          odometer152.update(start - 136512960)
           start += increment;
         }
       }, 10000)
@@ -485,7 +485,7 @@ function fetchViewCount11() {
      setInterval(() => {
         if (start <= max) {
           odometer161.update(start);
-          odometer162.update(start - 24644695)
+          odometer162.update(start - 24684301)
           start += increment;
         }
       }, 10000)
@@ -510,7 +510,7 @@ function fetchViewCount12() {
      setInterval(() => {
         if (start <= max) {
           odometer171.update(start);
-          odometer172.update(start - 22293264)
+          odometer172.update(start - 22313269)
           start += increment;
         }
       }, 10000)
@@ -534,7 +534,7 @@ function fetchViewCount13() {
      setInterval(() => {
         if (start <= max) {
           odometer181.update(start);
-          odometer182.update(start - 15184663)
+          odometer182.update(start - 15223520)
           start += increment;
         }
       }, 30000)
@@ -563,7 +563,7 @@ function fetchViewCountAndUpdateOdometer() {
         if (start <= max) {
           odometer.update(start);
           odometer1.update(start - 30000000)
-          odometer2.update(start - 20251234)
+          odometer2.update(start - 21101551)
           start += increment;
         }
       }, 3000)
