@@ -485,7 +485,7 @@ function fetchViewCount11() {
      setInterval(() => {
         if (start <= max) {
           odometer161.update(start);
-          odometer162.update(start - 24624638)
+          odometer162.update(start - 24644695)
           start += increment;
         }
       }, 10000)
