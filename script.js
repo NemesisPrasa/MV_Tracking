@@ -312,8 +312,8 @@ function fetchViewCount4() {
     .then((data) => {
     const viewCount = parseInt(data.items[4].statistics.viewCount);
     let start = viewCount;
-    const max = viewCount + 70;
-    const increment = 2;
+    const max = viewCount + 35;
+    const increment = 1;
 
      setInterval(() => {
         if (start <= max) {
@@ -321,14 +321,14 @@ function fetchViewCount4() {
           odometer92.update(start - 318700613)
           start += increment;
         }
-      }, 10000)
+      }, 20000)
       
     })
 
     .catch((error) => console.error('Error fetching data:', error));
 }
 fetchViewCount4()
-setInterval(fetchViewCount4, 180000);
+setInterval(fetchViewCount4, 300000);
 
 function fetchViewCount5() {
   fetch(apiUrl)
