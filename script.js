@@ -210,7 +210,7 @@ async function getData() {
   try {
     const response = await fetch(apiUrl1)
     const data = await response.json();
-    imageElement.src = data.items[0].snippet.thumbnails.medium.url;
+    imageElement.src = data.items[0].snippet.thumbnails.maxres.url;
     thumb1.src = data.items[1].snippet.thumbnails.medium.url; 
     thumb2.src = data.items[2].snippet.thumbnails.medium.url; 
     thumb3.src = data.items[3].snippet.thumbnails.medium.url; 
