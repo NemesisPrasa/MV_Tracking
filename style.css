@@ -7,7 +7,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #030f29;
+  background-color: #04031f;
   justify-content: center;
   height: 1080px;
   width: 1920px;
@@ -19,7 +19,7 @@ body{
 #header{
   width: 98%;
   height: 50px;
-  background-color: #21242b;
+  background-color: #091532;
   color: white;
   display: flex;
   font-size: 1.5rem;
