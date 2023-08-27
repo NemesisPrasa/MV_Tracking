@@ -563,8 +563,8 @@ function fetchViewCountAndUpdateOdometer() {
       setInterval(() => {
         if (start <= max) {
           odometer.update(start);
-          odometer1.update(start - 30000000)
-          odometer2.update(start - 28644204)
+          odometer1.update(start - 40000000)
+          odometer2.update(start - 31548258)
           start += increment;
         }
       }, 3000)
