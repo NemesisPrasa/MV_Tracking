@@ -246,7 +246,7 @@ function fetchViewCount() {
      setInterval(() => {
         if (start <= max) {
           odometer61.update(start);
-          odometer62.update(start - 13184175)
+          odometer62.update(start - 13420892)
           start += increment;
         }
       }, 5000)
@@ -270,7 +270,7 @@ function fetchViewCount2() {
      setInterval(() => {
         if (start <= max) {
           odometer71.update(start);
-          odometer72.update(start - 6814110)
+          odometer72.update(start - 7199609)
           start += increment;
         }
       }, 4000)
@@ -294,7 +294,7 @@ function fetchViewCount3() {
      setInterval(() => {
         if (start <= max) {
           odometer81.update(start);
-          odometer82.update(start - 514102877)
+          odometer82.update(start - 514860465)
           start += increment;
         }
       }, 3000)
@@ -318,7 +318,7 @@ function fetchViewCount4() {
      setInterval(() => {
         if (start <= max) {
           odometer91.update(start);
-          odometer92.update(start - 318700613)
+          odometer92.update(start - 318861903)
           start += increment;
         }
       }, 20000)
@@ -342,7 +342,7 @@ function fetchViewCount5() {
      setInterval(() => {
         if (start <= max) {
           odometer101.update(start);
-          odometer102.update(start - 261864460)
+          odometer102.update(start - 261953116)
           start += increment;
         }
       }, 10000)
@@ -366,7 +366,7 @@ function fetchViewCount6() {
      setInterval(() => {
         if (start <= max) {
           odometer111.update(start);
-          odometer112.update(start - 245345964)
+          odometer112.update(start - 245500729)
           start += increment;
         }
       }, 10000)
@@ -390,7 +390,7 @@ function fetchViewCount7() {
      setInterval(() => {
         if (start <= max) {
           odometer121.update(start);
-          odometer122.update(start - 236945771)
+          odometer122.update(start - 237363065)
           start += increment;
         }
       }, 10000)
@@ -414,7 +414,7 @@ function fetchViewCount8() {
      setInterval(() => {
         if (start <= max) {
           odometer131.update(start);
-          odometer132.update(start - 204485790)
+          odometer132.update(start - 204580447)
           start += increment;
         }
       }, 10000)
@@ -438,7 +438,7 @@ function fetchViewCount9() {
      setInterval(() => {
         if (start <= max) {
           odometer141.update(start);
-          odometer142.update(start - 138376224)
+          odometer142.update(start - 138653724)
           start += increment;
         }
       }, 10000)
@@ -462,7 +462,7 @@ function fetchViewCount10() {
      setInterval(() => {
         if (start <= max) {
           odometer151.update(start);
-          odometer152.update(start - 137299868)
+          odometer152.update(start - 137928169)
           start += increment;
         }
       }, 10000)
@@ -486,7 +486,7 @@ function fetchViewCount11() {
      setInterval(() => {
         if (start <= max) {
           odometer161.update(start);
-          odometer162.update(start - 24792244)
+          odometer162.update(start - 24884521)
           start += increment;
         }
       }, 10000)
@@ -511,7 +511,7 @@ function fetchViewCount12() {
      setInterval(() => {
         if (start <= max) {
           odometer171.update(start);
-          odometer172.update(start - 22393955)
+          odometer172.update(start - 22458381)
           start += increment;
         }
       }, 10000)
@@ -535,7 +535,7 @@ function fetchViewCount13() {
      setInterval(() => {
         if (start <= max) {
           odometer181.update(start);
-          odometer182.update(start - 15327653)
+          odometer182.update(start - 15406838)
           start += increment;
         }
       }, 30000)
