@@ -7,7 +7,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: rgb(3, 15, 41);
+  background-color: #030f29;
   justify-content: center;
   height: 1080px;
   width: 1920px;
@@ -70,7 +70,7 @@ body{
   padding-bottom: 5px;
   justify-content: center;
   flex-direction: column;
-  background-color: #121215;
+  background-color: #030f29;
 }
 
 .mv-title{
@@ -79,7 +79,7 @@ body{
   font-size: 1.3rem;
   justify-content: space-between;
   padding: 5px;
-  background-color: #21242b;
+  background-color: #071636;
   
 }
 
@@ -112,7 +112,7 @@ justify-content: space-between;
   justify-items: baseline;
   padding: 5px;
   height: 65px;
-  background-color: #31333a;
+  background-color: #071636;
 }
 
 .odometer {
